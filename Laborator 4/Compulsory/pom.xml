@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lab4:project xmlns:lab4="http://maven.apache.org/POM/4.0.0"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <lab4:modelVersion>4.0.0</lab4:modelVersion>
+
+    <lab4:groupId>org.example</lab4:groupId>
+    <lab4:artifactId>Laborator 4</lab4:artifactId>
+    <lab4:version>1.0-SNAPSHOT</lab4:version>
+
+    <lab4:properties>
+        <lab4:maven.compiler.source>17</lab4:maven.compiler.source>
+        <lab4:maven.compiler.target>17</lab4:maven.compiler.target>
+    </lab4:properties>
+
+</lab4:project>
