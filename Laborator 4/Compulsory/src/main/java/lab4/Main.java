@@ -58,19 +58,6 @@ public class Main {
         System.out.println("HashSet-ul nu contine duplicate");
         //am verificat daca exista duplicate
 
-        /*
-        for (Street street : streets) {
-            nodeList.stream().filter(v -> cityMap.get(v).contains(street)).forEach(System.out::println);
-        }
-        for (int i = 0; i < streets.length-1; i++){
-            for (int j = i+1; j < streets.length; j++) {
-                List<Street> target = Arrays.asList(streets[i], streets[j]);
-                List<Intersection> result = nodeList.stream().filter(v -> cityMap.get(v)
-                                .containsAll(target))
-                        .collect(Collectors.toList());
-            }
-        }
-       */
 
     }
 }
