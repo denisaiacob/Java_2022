@@ -1,0 +1,9 @@
+
+œ
+java:S1186	"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(“É©·þÿÿÿÿ
+h
+java:S6201%"RReplace this instanceof check and cast with 'instanceof Identifiable identifiable'(—¹‘½
+A
+java:S1905*"&Remove this unnecessary cast to "int".(ÌŸ»Ðüÿÿÿÿ
+V	java:S1252"<This block of commented-out lines of code should be removed.(ÒÌâ–øÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ñ§£‡

@@ -1,0 +1,10 @@
+
+—
+java:S1186-"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Üë¤È
+—
+java:S11862"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(˜¹Ëá
+F
+java:S2160"+Override the "equals" method in this class.(Ë¿§óøÿÿÿÿ
+a
+java:S2184"FCast one of the operands of this multiplication operation to a "long".(Îèåâýÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ñ§£‡
