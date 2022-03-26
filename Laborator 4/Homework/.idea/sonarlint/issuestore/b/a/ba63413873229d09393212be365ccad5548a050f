@@ -1,0 +1,32 @@
+
+l
+java:S1128"QRemove this unnecessary import: java.lang classes are always implicitly imported.(ãø©Æþÿÿÿÿ
+W
+java:S1854="ARemove this useless assignment to local variable "newSortedList".(û»ó
+R
+java:S1854]"7Remove this useless assignment to local variable "mst".(ùûÝ¹ûÿÿÿÿ
+M
+java:S1854\"7Remove this useless assignment to local variable "mst".(¯–Ïñ
+g
+java:S6204>"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ÓËÿA
+H
+java:S1481="2Remove this unused "newSortedList" local variable.(û»ó
+>
+java:S1481\"(Remove this unused "mst" local variable.(¯–Ïñ
+<
+java:S1481d"&Remove this unused "i" local variable.(ž½è
+<
+java:S1481g"&Remove this unused "s" local variable.(©±ù’
+n
+java:S3776š"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(ìí©£øÿÿÿÿ
+C
+java:S1125±"'Remove the unnecessary boolean literal.(–°à›ÿÿÿÿÿ
+o
+java:S2293q"YReplace the type specification in this constructor call with the diamond operator ("<>").(ë¤íú
+K
+java:S1066±"/Merge this if statement with the enclosing one.(–°à›ÿÿÿÿÿ
+F
+java:S5411±"*Use the primitive boolean expression here.(–°à›ÿÿÿÿÿ
+H
+java:S1199"-Extract this nested code block into a method.(ÒÌâ–øÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(³œŸòùÿÿÿÿ

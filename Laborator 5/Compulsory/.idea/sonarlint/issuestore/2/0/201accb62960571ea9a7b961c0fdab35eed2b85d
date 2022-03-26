@@ -1,0 +1,11 @@
+
+?
+java:S1197"*Move the array designators [] to the type.(ÕˆD
+c
+java:S1075"ARefactor your code to get this URI from a customizable parameter.(îœûÁùÿÿÿÿ8“Šøëú/
+Q	java:S125"<This block of commented-out lines of code should be removed.(øúæ•
+V
+java:S1854";Remove this useless assignment to local variable "catalog".(ÉšÓ³øÿÿÿÿ
+G
+java:S1481",Remove this unused "catalog" local variable.(ÉšÓ³øÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(–Ä¸œûÿÿÿÿ
