@@ -1,0 +1,5 @@
+
+Š
+java:S1130
+"uRemove the declaration of thrown exception 'lab5.InvalidCatalogException', as it cannot be thrown from method's body.(¯Ù¸]
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(–Ä¸œûÿÿÿÿ

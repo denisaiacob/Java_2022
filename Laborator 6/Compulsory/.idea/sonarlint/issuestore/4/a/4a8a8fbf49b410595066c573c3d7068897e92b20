@@ -1,0 +1,8 @@
+
+?
+java:S1659")Declare "spinnerCols" on a separate line.(ñ¢ÕŽ
+8
+java:S1659""Declare "cols" on a separate line.(´øÜ×
+Z
+java:S1128"=Remove this unused import 'javax.swing.event.ChangeListener'.(†˜ñ‚8…„ËŠý/
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ö®½§øÿÿÿÿ
