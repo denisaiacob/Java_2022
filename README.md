@@ -16,4 +16,7 @@ Laborator 5:
 Compulsory + Homework;
 
 Laborator 6:
+Compulsory + Homework;
+
+Laborator 7:
 Compulsory;
