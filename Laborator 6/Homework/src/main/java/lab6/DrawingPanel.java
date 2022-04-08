@@ -5,7 +5,6 @@ import org.jgrapht.graph.SimpleGraph;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
-import javax.swing.plaf.basic.BasicInternalFrameTitlePane;
 import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
@@ -22,7 +21,6 @@ public class DrawingPanel extends JPanel {
     int stoneSize = 20;
     int rows, cols;
     int player=0;
-    //boolean [][] adj; //pentru a vedea ce intersectii sunt legate intre ele
     int precX, precY; //pentru a retine pozitia mutarii anterioara
     int precR, precC; //pentru linia si coloana precedenta
     boolean[][] checkedNodes;
@@ -32,6 +30,7 @@ public class DrawingPanel extends JPanel {
     Graphics2D offscreen; //the offscreen graphics
 
     public DrawingPanel(MainFrame frame)  {
+        player=0;
         this.frame = frame;
         createOffscreenImage();
         init(frame.configPanel.getRows(), frame.configPanel.getCols());
@@ -50,11 +49,9 @@ public class DrawingPanel extends JPanel {
     final void init(int rows, int cols) {
         this.rows = rows;
         this.cols = cols;
-      //  adj=new boolean[rows+1][cols+1];
         checkedNodes=new boolean[rows+1][cols+1];
-        for(int i=0;i<=rows;i++) {
-            for (int j = 0; j <= cols; j++) {
-               // this.adj[i][j] = false;
+        for(int i=0;i<rows;i++) {
+            for (int j = 0; j < cols; j++) {
                 this.checkedNodes[i][j]=false;
             }
         }
@@ -71,13 +68,13 @@ public class DrawingPanel extends JPanel {
         this.addMouseListener(new MouseAdapter() {
             @Override
             public void mousePressed(MouseEvent e) {
-                isWinner();
+               // isWinner();
                 if(isNode(e.getX(),e.getY()) && isAdjacent(e.getX(),e.getY())) {
                     drawStone(e.getX(), e.getY());
                     repaint();
-                  //  isWinner();
+                    isWinner();
                 }
-               // isWinner();
+              //  isWinner();
             }
         });
 
@@ -125,19 +122,16 @@ public class DrawingPanel extends JPanel {
     }
 
     public boolean isNode(int x1,int y1){
-        for (int row = 0; row <= rows; row++) {
-            for (int col = 0; col <= cols; col++) {
+        for (int row = 0; row < rows; row++) {
+            for (int col = 0; col < cols; col++) {
                 int x = padX + col * cellWidth;
                 int y = padY + row * cellHeight;
                if(x1<=x+stoneSize/2 && x1>= x-stoneSize/2 && y1<=y+stoneSize/2 && y1>=y-stoneSize/2
-                   && !checkedNodes[row+1][col+1]){
-                       // && adj[row+1][col+1] && !checkedNodes[row+1][col+1]) {
+                   && !checkedNodes[row][col]){
                    if (graph.containsEdge("v"+precR+precC,"v"+row+col) || player==0){
-                 //  || graph.containsEdge("v"+row+col,"v"+precR+precC) || player==0) {
                        precR = row;
                        precC = col;
-                       checkedNodes[row + 1][col + 1] = true;
-                      // checkedNodes[row][col]=true;
+                       checkedNodes[row][col] = true;
                        return true;
                    }
                }
@@ -157,7 +151,6 @@ public class DrawingPanel extends JPanel {
             if(y1<precY+cellWidth+stoneSize/2 && y1> precY-cellWidth-stoneSize/2){
                     this.precX = x1;
                     this.precY = y1;
-
                     return true;
             }
         }
@@ -165,42 +158,33 @@ public class DrawingPanel extends JPanel {
     }//verifica daca este adiacent cu alegerea precedenta
 
     public void isWinner(){
+        //verific pentru fiecare alegere posibila daca exista muchia si intersectia are deja piesa pe ea
+        //sau nu exista muchie deci nu pot pune piesa pe intersectie
+        //sau intersectia ar fi in afara tablei de joc
+        //atunci afisez castigatorul in functie de cine a pus ultima piesa
 
-        if ((graph.containsEdge("v"+precR+precC,"v"+(precR++)+(precC++))
-        &&  precR<rows && precC<cols && checkedNodes[precR+1][precC+1]==true)
-               || !graph.containsEdge("v"+precR+precC,"v"+(precR++)+(precC++))
-                        ||  precR>=rows || precC>=cols){
+        if((graph.containsEdge("v"+precR+precC,"v"+(precR+1)+precC)
+                && checkedNodes[precR+1][precC])
+                || !graph.containsEdge("v" + precR + precC, "v" + (precR+1) + precC)
+                ||  precR>=rows) {
+            if((graph.containsEdge("v"+precR+precC,"v"+precR+(precC+1))
+                    && checkedNodes[precR][precC+1])
+                    || !graph.containsEdge("v"+precR+precC,"v"+precR+(precC+1))
+                    || precC>=cols) {
 
-            if((graph.containsEdge("v"+precR+precC,"v"+(precR--)+(precC--))
-                            &&  precR>0 && precC>0 && checkedNodes[precR-1][precC-1]==true)
-            ||!graph.containsEdge("v"+precR+precC,"v"+(precR--)+(precC--))
-                    ||  precR==0 || precC==0) {
+                if((graph.containsEdge("v"+precR+precC,"v"+(precR-1)+precC)
+                        && checkedNodes[precR-1][precC])
+                        ||!graph.containsEdge("v"+precR+precC,"v"+(precR-1)+precC)
+                        ||  precR==0) {
 
-                if((graph.containsEdge("v"+precR+precC,"v"+(precR++)+precC)
-                                &&  precR<rows  && checkedNodes[precR+1][precC]==true)
-                        ||!graph.containsEdge("v"+precR+precC,"v"+(precR++)+precC)
-                                ||  precR>=rows) {
-
-                    if((graph.containsEdge("v"+precR+precC,"v"+precR+(precC++))
-                                    && precC<cols && checkedNodes[precR][precC+1]==true)
-                            || !graph.containsEdge("v"+precR+precC,"v"+precR+(precC++))
-                                    || precC>=cols) {
-
-                        if((graph.containsEdge("v"+precR+precC,"v"+(precR--)+precC)
-                                        &&  precR>0  && checkedNodes[precR-1][precC]==true)
-                                ||!graph.containsEdge("v"+precR+precC,"v"+(precR--)+precC)
-                                        ||  precR==0) {
-
-                            if ((graph.containsEdge("v"+precR+precC,"v"+precR+(precC--))
-                                            && precC>0 && checkedNodes[precR][precC+1]==true)
-                            ||!graph.containsEdge("v"+precR+precC,"v"+precR+(precC--))
-                                    || precC==0) {
-                                if (player % 2 == 0)
-                                    System.out.println("Primul jucator a castigat");
-                                else
-                                    System.out.println("Al doilea jucator a castigat");
-                            }
-                        }
+                    if ((graph.containsEdge("v"+precR+precC,"v"+precR+(precC-1))
+                            && checkedNodes[precR][precC+1])
+                            ||!graph.containsEdge("v"+precR+precC,"v"+precR+(precC-1))
+                            || precC==0) {
+                        if (player % 2 == 1)
+                            System.out.println("Primul jucator a castigat");
+                        else
+                            System.out.println("Al doilea jucator a castigat");
                     }
                 }
             }
@@ -232,8 +216,6 @@ public class DrawingPanel extends JPanel {
                  int y = padY + r * cellHeight;
                  int x1 = padX + (c) * cellWidth;
                  int y1 = padY + (r + 1) * cellHeight;
-               //  this.adj[r+1][c+1]=true;
-                // this.adj[r+2][c+1]=true;
 
                  int r2=r+1;
                  graph.addEdge("v"+r+c,"v" + r2+ c);
@@ -244,12 +226,9 @@ public class DrawingPanel extends JPanel {
                  int y = padY + r * cellHeight;
                  int x1 = padX + (c + 1) * cellWidth;
                  int y1 = padY + (r) * cellHeight;
-                 //this.adj[r+1][c+1]=true;
-                 //this.adj[r+1][c+2]=true;
 
                  int c2=c+1;
                  graph.addEdge("v"+r+c,"v" + r+ c2);
-
 
                  offscreen.drawLine(x, y, x1, y1);
              }
@@ -259,8 +238,8 @@ public class DrawingPanel extends JPanel {
     public SimpleGraph<String, DefaultEdge> createGraf() {
         SimpleGraph<String, DefaultEdge> g = new SimpleGraph<>(DefaultEdge.class);
 
-        for (int i = 0; i <= rows; i++) {
-            for(int j=0;j<=cols; j++) {
+        for (int i = 0; i < rows; i++) {
+            for(int j=0;j<cols; j++) {
                 g.addVertex("v" + i + j);
             }
         }

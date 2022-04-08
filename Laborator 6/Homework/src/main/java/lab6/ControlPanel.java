@@ -47,6 +47,9 @@ public class ControlPanel extends JPanel implements Serializable {
             FileOutputStream fileOut = new FileOutputStream("joc.ser");
             ObjectOutputStream out = new ObjectOutputStream(fileOut);
             out.writeObject(frame.canvas);
+            out.writeObject(frame.configPanel);
+            out.writeObject(frame.controlPanel);
+            out.writeObject(frame);
             out.close();
             fileOut.close();
             System.out.printf("Serialized data is saved in joc.ser");

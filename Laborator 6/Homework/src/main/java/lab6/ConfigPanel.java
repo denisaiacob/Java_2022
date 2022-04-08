@@ -5,6 +5,7 @@ import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 import java.awt.event.ActionEvent;
 
+
 public class ConfigPanel extends JPanel {
     final MainFrame frame;
     DrawingPanel canvas;
@@ -40,7 +41,7 @@ public class ConfigPanel extends JPanel {
     }
 
     private void createGame(ActionEvent e) {
-        canvas = new DrawingPanel(frame);
+        frame.reinit();
     }
     public int getRows() {
         return rows;
