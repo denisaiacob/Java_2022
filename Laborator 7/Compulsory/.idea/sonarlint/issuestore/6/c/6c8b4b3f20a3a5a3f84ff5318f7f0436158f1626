@@ -1,0 +1,4 @@
+
+k
+java:S6206"NRefactor this class declaration to use 'record Tile(char letter, int points)'.(íªÉÚ8ú‘Ù‰ÿ/
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ëƒž‹üÿÿÿÿ

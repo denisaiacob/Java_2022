@@ -1,0 +1,7 @@
+
+E
+java:S1197"*Move the array designators [] to the type.(¡şÏÖøÿÿÿÿ
+]	java:S125"<This block of commented-out lines of code should be removed.(§×äŒüÿÿÿÿ8ê·´«ÿ/
+D
+java:S1068	".Remove this unused "dictionary" private field.(†óæÇ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ëƒ‹üÿÿÿÿ

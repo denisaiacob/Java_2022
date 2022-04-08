@@ -1,0 +1,69 @@
+
+˜
+java:S1186Ó"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(æìÑº
+@
+java:S1659"*Declare "canvasHeight" on a separate line.(»ÿ‘±
+?
+java:S1659")Declare "boardHeight" on a separate line.(“şÀÇ
+>
+java:S1659"(Declare "cellHeight" on a separate line.(ñ¼‰ç
+=
+java:S1659""Declare "padY" on a separate line.(¢âÓƒÿÿÿÿÿ
+=
+java:S1659""Declare "cols" on a separate line.(é½ËÍûÿÿÿÿ
+9
+java:S1659"#Declare "precY" on a separate line.(èü
+>
+java:S1659"#Declare "precC" on a separate line.(ï€Øçùÿÿÿÿ
+=
+java:S1948"'Make "image" transient or serializable.(Îí˜¸
+A
+java:S1948 "+Make "offscreen" transient or serializable.(¿“£¼
+V	java:S125-"<This block of commented-out lines of code should be removed.(õÆğ˜üÿÿÿÿ
+Q	java:S1255"<This block of commented-out lines of code should be removed.(ÈĞûÎ
+Q	java:S1259"<This block of commented-out lines of code should be removed.(òÅáà
+Q	java:S125N"<This block of commented-out lines of code should be removed.(»œ”ë
+Q	java:S125P"<This block of commented-out lines of code should be removed.(»œ”ë
+R	java:S125†"<This block of commented-out lines of code should be removed.(¾çê»
+W	java:S125ˆ"<This block of commented-out lines of code should be removed.(ôÈæàıÿÿÿÿ
+W	java:S125Œ"<This block of commented-out lines of code should be removed.(á«õ¡üÿÿÿÿ
+n
+java:S3776§"RRefactor this method to reduce its Cognitive Complexity from 41 to the 15 allowed.(ÅŒÑÒûÿÿÿÿ
+C
+java:S1125ª"'Remove the unnecessary boolean literal.(”•Ûüşÿÿÿÿ
+E
+java:S1125¯"'Remove the unnecessary boolean literal.(õâ×Ê8 ÃÙ©ÿ/
+J
+java:S1125´"'Remove the unnecessary boolean literal.(Â©ßüÿÿÿÿ8’·Ú©ÿ/
+J
+java:S1125¹"'Remove the unnecessary boolean literal.(§Á‡ãúÿÿÿÿ8ìÛ©ÿ/
+D
+java:S1125¾"'Remove the unnecessary boolean literal.(…½›8ˆÙÛ©ÿ/
+E
+java:S1125Ã"'Remove the unnecessary boolean literal.(Å‡‚ş8İÜ©ÿ/
+W	java:S125Ù"<This block of commented-out lines of code should be removed.(ö£Ç’ûÿÿÿÿ
+@
+java:S2140à")Use "java.util.Random.nextInt()" instead.(†·Ğ¶
+@
+java:S2140á")Use "java.util.Random.nextInt()" instead.(¾Îçç
+@
+java:S2140â")Use "java.util.Random.nextInt()" instead.(±¦Ü·
+R	java:S125ë"<This block of commented-out lines of code should be removed.(­‚­½
+R	java:S125÷"<This block of commented-out lines of code should be removed.(­‚­½
+e
+java:S1128"ORemove this unused import 'javax.swing.plaf.basic.BasicInternalFrameTitlePane'.(‹£¬¥
+K
+java:S1066‡"/Merge this if statement with the enclosing one.(šÃ–üÿÿÿÿ
+F
+java:S1066"/Merge this if statement with the enclosing one.(‹§õ±
+K
+java:S1066®"/Merge this if statement with the enclosing one.(ÿ‹ÃÔıÿÿÿÿ
+F
+java:S1066³"/Merge this if statement with the enclosing one.(Öµ÷Á
+F
+java:S1066¸"/Merge this if statement with the enclosing one.(àØ£Ä
+F
+java:S1066½"/Merge this if statement with the enclosing one.(é¸Àá
+K
+java:S1066Â"/Merge this if statement with the enclosing one.(¿¾ï”úÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ö®½§øÿÿÿÿ
