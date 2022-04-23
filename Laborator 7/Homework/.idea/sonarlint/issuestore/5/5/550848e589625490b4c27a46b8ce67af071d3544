@@ -1,0 +1,18 @@
+
+h
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(‡ôÙ˜
+‚
+java:S1130"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(‡ôÙ˜
+;
+java:S2129" Remove this "String" constructor(ñÀ¦Óşÿÿÿÿ
+>
+java:S2114."(Remove or correct this "removeAll" call.(ÕÙ¾
+Z
+java:S2147O"DCombine this catch with the one at line 77, which has the same body.(ï­£Ä
+t
+java:S2142M"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€
+Q	java:S125D"<This block of commented-out lines of code should be removed.(½‘Ñ³
+V	java:S125R"<This block of commented-out lines of code should be removed.(•Ñ¤úÿÿÿÿ
+A
+java:S1068"+Remove this unused "running" private field.(ó§°Ò
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ëƒ‹üÿÿÿÿ

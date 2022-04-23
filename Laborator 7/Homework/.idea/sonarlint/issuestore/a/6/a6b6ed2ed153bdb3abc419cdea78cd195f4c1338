@@ -1,0 +1,6 @@
+
+?
+java:S2140")Use "java.util.Random.nextInt()" instead.(æ‰Óú
+?
+java:S2140!")Use "java.util.Random.nextInt()" instead.(æ‰Óú
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ëƒ‹üÿÿÿÿ
