@@ -1,0 +1,9 @@
+
+[
+java:S1854)"ERemove this useless assignment to local variable "sphericalMercator".(Ñù±‰
+E
+java:S1197
+"*Move the array designators [] to the type.(™€æùÿÿÿÿ
+L
+java:S1481)"6Remove this unused "sphericalMercator" local variable.(Ñù±‰
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¸Ôí

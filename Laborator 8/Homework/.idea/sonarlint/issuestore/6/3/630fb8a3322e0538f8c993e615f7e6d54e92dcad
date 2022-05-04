@@ -1,0 +1,7 @@
+
+
+java:S1130"nRemove the declaration of thrown exception 'java.sql.SQLException', as it cannot be thrown from method's body.(ïÙ§üÿÿÿÿ8ŞÈ†‰0
+]	java:S125"<This block of commented-out lines of code should be removed.(åµ¦üÿÿÿÿ8×¯ú‰0
+]	java:S125"<This block of commented-out lines of code should be removed.(ŠÊ¤“ıÿÿÿÿ8˜ıì‰0
+]	java:S125"<This block of commented-out lines of code should be removed.(‡ÛÂÎüÿÿÿÿ8é²í‰0
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¸Ôí8ÿÈ†‰0

@@ -22,4 +22,7 @@ Laborator 7:
 Compulsory + Homework;
 
 Laborator 8:
+Compulsory + Homework;
+
+Laborator 9:
 Compulsory;
