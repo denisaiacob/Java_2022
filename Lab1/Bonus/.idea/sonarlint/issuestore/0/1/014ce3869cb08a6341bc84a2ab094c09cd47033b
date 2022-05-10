@@ -1,0 +1,19 @@
+
+E
+java:S1197"*Move the array designators [] to the type.(±õ½¨ÿÿÿÿÿ
+E
+java:S1197"*Move the array designators [] to the type.(ÏòÏ¯ûÿÿÿÿ
+V	java:S125"<This block of commented-out lines of code should be removed.(ÞÒ‚ÿÿÿÿÿ
+?
+java:S2140;")Use "java.util.Random.nextInt()" instead.(ìÜÕ£
+b	java:S100A"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŽÚ¸}
+h
+java:S3776N"RRefactor this method to reduce its Cognitive Complexity from 79 to the 15 allowed.(´±†¦
+=
+java:S1125|"'Remove the unnecessary boolean literal.(‘Åß¥
+D
+java:S2114Â"(Remove or correct this "removeAll" call.(é¹Ãáûÿÿÿÿ
+p
+java:S2293˜"YReplace the type specification in this constructor call with the diamond operator ("<>").(ž†à¤
+E
+java:S1066}"/Merge this if statement with the enclosing one.(§š ¬

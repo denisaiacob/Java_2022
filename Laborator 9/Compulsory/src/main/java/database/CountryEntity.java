@@ -1,15 +1,13 @@
 package database;
 
-import jakarta.persistence.Basic;
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 import java.math.BigInteger;
 
 @Entity
 @Table(name = "Country", schema = "STUDENT", catalog = "")
 public class CountryEntity {
+    @Id
     @Basic
     @Column(name = "ID")
     private BigInteger id;
@@ -78,4 +76,5 @@ public class CountryEntity {
         result = 31 * result + (continent != null ? continent.hashCode() : 0);
         return result;
     }
+
 }

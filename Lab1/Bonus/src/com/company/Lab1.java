@@ -199,6 +199,7 @@ public class Lab1 {
         if(!sol) {
             System.out.println("NU EXISTA SOLUTIE");
         }
+
     }
 
 

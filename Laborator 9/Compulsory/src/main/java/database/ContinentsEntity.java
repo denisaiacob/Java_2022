@@ -2,11 +2,17 @@ package database;
 
 import jakarta.persistence.*;
 
+import java.io.Serializable;
 import java.math.BigInteger;
 
 @Entity
 @Table(name = "CONTINENTS", schema = "STUDENT", catalog = "")
-public class ContinentsEntity {
+@NamedQueries({
+        @NamedQuery(name = "Continent.findAll",
+                query = "select e from ContinentsEntity e order by e.name"),
+})
+
+public class ContinentsEntity implements Serializable {
     @Id
     @Basic
     @Column(name = "ID")
@@ -14,6 +20,14 @@ public class ContinentsEntity {
     @Basic
     @Column(name = "NAME")
     private String name;
+
+    public ContinentsEntity(String name) {
+        this.name=name;
+    }
+
+    public ContinentsEntity() {
+
+    }
 
     public BigInteger getId() {
         return id;
@@ -50,5 +64,24 @@ public class ContinentsEntity {
         result = 31 * result + (name != null ? name.hashCode() : 0);
         return result;
     }
+
+    public void testJPA() {
+        EntityManagerFactory emf =
+                Persistence.createEntityManagerFactory("ExamplePU");
+        EntityManager em = emf.createEntityManager();
+
+        em.getTransaction().begin();
+        ContinentsEntity continent = new ContinentsEntity("Europe");
+        em.persist(continent);
+
+        ContinentsEntity c = (ContinentsEntity) em.createQuery(
+                        "select e from ContinentsEntity e where e.name='Europe'")
+                .getSingleResult();
+        c.setName("Africa");
+        em.getTransaction().commit();
+        em.close();
+        emf.close();
+    }
+
 
 }

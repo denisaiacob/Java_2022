@@ -1,0 +1,15 @@
+
+Z
+java:S1854-"=Remove this useless assignment to local variable "countryId".(‰ÑúÏ8æ‚¢ÇŠ0
+K
+java:S1481-".Remove this unused "countryId" local variable.(‰ÑúÏ8‡¯¢ÇŠ0
+]	java:S125."<This block of commented-out lines of code should be removed.(ãà‹Ôûÿÿÿÿ8ê£àÇŠ0
+I
+java:S19050"'Remove this unnecessary cast to "List".(»Â¦îüÿÿÿÿ8þóšÇŠ0
+Q	java:S1252"<This block of commented-out lines of code should be removed.(…¢¥Â
+E	java:S1083")Either remove or fill this block of code.(’¥¢Ï8ìà—ÇŠ0
+g
+java:S1128"ERemove this unused import 'jakarta.persistence.EntityManagerFactory'.(‹ ñºûÿÿÿÿ8ì£àÇŠ0
+^
+java:S1128"<Remove this unused import 'jakarta.persistence.Persistence'.(ŸÖ¦µÿÿÿÿÿ8í£àÇŠ0
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ç‚¦þ

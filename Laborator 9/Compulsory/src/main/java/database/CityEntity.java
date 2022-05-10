@@ -1,12 +1,20 @@
 package database;
 
 import jakarta.persistence.*;
+import org.dom4j.tree.AbstractEntity;
 
 import java.math.BigInteger;
 
 @Entity
 @Table(name = "City", schema = "STUDENT", catalog = "")
-public class CityEntity {
+@NamedQueries({
+        @NamedQuery(name = "City.findAll",
+                query = "select e from CityEntity e order by e.name"),
+        @NamedQuery(name = "City.findByCountry",
+                query = "select e from CityEntity e where e.country = ?1"),
+
+})
+public class CityEntity extends AbstractEntity {
     @Id
     @Basic
     @Column(name = "ID")

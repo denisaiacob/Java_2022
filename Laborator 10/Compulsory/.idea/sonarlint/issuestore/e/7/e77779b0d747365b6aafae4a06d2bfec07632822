@@ -1,0 +1,7 @@
+
+l
+java:S1450
+"QRemove the "in" field and declare it as a local variable in the relevant methods.(¶õ” ÿÿÿÿÿ
+h
+java:S1450"RRemove the "out" field and declare it as a local variable in the relevant methods.(Ï‰•¦
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(©÷©·ýÿÿÿÿ

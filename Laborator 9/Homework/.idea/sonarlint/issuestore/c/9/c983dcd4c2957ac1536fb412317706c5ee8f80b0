@@ -1,0 +1,9 @@
+
+X	java:S125"<This block of commented-out lines of code should be removed.(ƒ¼¼Ë8®‹ÙÌŠ0
+c	java:S119"IRename this generic name to match the regular expression '^[A-Z][0-9]?$'.(ÿ§ÔÕÿÿÿÿÿ
+Q	java:S125)"<This block of commented-out lines of code should be removed.(Üîæİ
+C
+java:S11726"(Remove this unused method parameter "e".(•šµ÷üÿÿÿÿ
+S
+java:S1128"6Remove this unused import 'database.ContinentsEntity'.(ùĞÕ¬8ÓğÚÌŠ0
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ç‚¦ş

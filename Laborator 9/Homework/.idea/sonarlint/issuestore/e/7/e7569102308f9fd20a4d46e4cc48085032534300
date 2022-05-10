@@ -1,0 +1,8 @@
+
+R
+java:S1128"0Remove this unused import 'database.CityEntity'.(Ôüáòÿÿÿÿÿ8‘ïÕÂŠ0
+S
+java:S1128"6Remove this unused import 'database.ContinentsEntity'.(ùĞÕ¬8’ïÕÂŠ0
+^
+java:S1128"<Remove this unused import 'jakarta.persistence.Persistence'.(ŸÖ¦µÿÿÿÿÿ8’ÔÖÂŠ0
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ç‚¦ş

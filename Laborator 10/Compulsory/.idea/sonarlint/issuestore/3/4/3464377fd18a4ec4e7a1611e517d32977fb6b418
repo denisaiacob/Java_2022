@@ -1,0 +1,27 @@
+
+œ
+java:S1186+"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¯Í¬¼ùÿÿÿÿ
+œ
+java:S11860"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ù˜‚òÿÿÿÿÿ
+œ
+java:S11865"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ÖÏÚÔûÿÿÿÿ
+œ
+java:S1186:"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¶ç¸±ùÿÿÿÿ
+h
+java:S1450"RRemove the "out" field and declare it as a local variable in the relevant methods.(Ï‰•¦
+V	java:S125"<This block of commented-out lines of code should be removed.(·Ýê™ùÿÿÿÿ
+Q	java:S125("<This block of commented-out lines of code should be removed.(¾ƒòÉ
+7
+java:S1116-"Remove this empty statement.(Åñ­õþÿÿÿÿ
+7
+java:S11162"Remove this empty statement.(Åñ­õþÿÿÿÿ
+7
+java:S11167"Remove this empty statement.(Åñ­õþÿÿÿÿ
+7
+java:S1116<"Remove this empty statement.(Åñ­õþÿÿÿÿ
+D
+java:S1068
+".Remove this unused "personName" private field.(ï³†
+=
+java:S1068"'Remove this unused "out" private field.(Ï‰•¦
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(©÷©·ýÿÿÿÿ

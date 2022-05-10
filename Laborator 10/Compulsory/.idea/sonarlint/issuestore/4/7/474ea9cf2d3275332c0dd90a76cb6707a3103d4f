@@ -1,0 +1,10 @@
+
+m
+java:S1104"PMake stop a static final constant or non-public and provide accessors if needed.(§Œõ¢8’®û¦Š0
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(©÷©·ıÿÿÿÿ
+W
+java:S2259-"AA "NullPointerException" could be thrown; "out" is nullable here.(ò½³À
+\
+java:S22590"AA "NullPointerException" could be thrown; "out" is nullable here.(ÆñÅúÿÿÿÿ
+[
+java:S2259+"@A "NullPointerException" could be thrown; "in" is nullable here.(­®ƒõùÿÿÿÿ

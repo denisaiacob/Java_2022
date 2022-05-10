@@ -1,0 +1,8 @@
+
+\
+java:S1854":Remove this useless assignment to local variable "server".(ÿµÔ¥şÿÿÿÿ8‹Ì¿¤Š0
+L
+java:S1197"*Move the array designators [] to the type.(º ìıÿÿÿÿ8‹Ì¿¤Š0
+M
+java:S1481"+Remove this unused "server" local variable.(ÿµÔ¥şÿÿÿÿ8‹Ì¿¤Š0
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(©÷©·ıÿÿÿÿ

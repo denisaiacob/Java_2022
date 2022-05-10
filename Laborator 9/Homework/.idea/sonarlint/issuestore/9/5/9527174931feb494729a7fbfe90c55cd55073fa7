@@ -1,0 +1,13 @@
+
+X	java:S125#"<This block of commented-out lines of code should be removed.(ïÆ©´8øÔÅŠ0
+]	java:S125%"<This block of commented-out lines of code should be removed.(ˆÌüÿÿÿÿ8¾İÔÅŠ0
+\
+java:S11614":Add the "@Override" annotation above this method signature(ú›Šøøÿÿÿÿ8²±çÀŠ0
+W
+java:S11618":Add the "@Override" annotation above this method signature(Ò’Š¯8²±çÀŠ0
+\
+java:S1126V"AReplace this if-then-else statement by a single return statement.(ğÀÄ¹ùÿÿÿÿ
+M
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8ÎİÔÅŠ0
+^
+java:S1710"<Remove the 'NamedQueries' wrapper from this annotation group(¨‘¯¼ûÿÿÿÿ8¥¬öÀŠ0
