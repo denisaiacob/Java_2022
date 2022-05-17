@@ -1,0 +1,5 @@
+
+X	java:S125"<This block of commented-out lines of code should be removed.(šÍâ¢8‡¨ÛíŒ0
+K
+java:S1874*"0Remove this use of "readLine"; it is deprecated.(¡¾°âùÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Óˆ¦‡øÿÿÿÿ

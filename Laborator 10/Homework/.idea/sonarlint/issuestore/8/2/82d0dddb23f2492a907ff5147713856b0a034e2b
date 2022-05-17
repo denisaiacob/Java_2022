@@ -1,0 +1,16 @@
+
+Q	java:S125"<This block of commented-out lines of code should be removed.(ÃÖÊÚ
+V	java:S125""<This block of commented-out lines of code should be removed.(ŸùÕ‹ÿÿÿÿÿ
+E
+java:S2093"*Change this "try" to a try-with-resources.(ç£êúÿÿÿÿ
+v
+java:S1104
+"[Make acceptConection a static final constant or non-public and provide accessors if needed.(Öß¡¤ıÿÿÿÿ
+P
+java:S1444
+"5Make this "public static acceptConection" field final(Öß¡¤ıÿÿÿÿ
+0
+java:S1700	"Rename field "server"(çìÃÔıÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(©÷©·ıÿÿÿÿ
+Y
+java:S2583"CChange this condition so that it does not always evaluate to "true"(¡†»

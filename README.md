@@ -28,4 +28,7 @@ Laborator 9:
 Compulsory + Homework;
 
 Labrator 10:
+Compulsory + Homework;
+
+Laborator 11:
 Compulsory;

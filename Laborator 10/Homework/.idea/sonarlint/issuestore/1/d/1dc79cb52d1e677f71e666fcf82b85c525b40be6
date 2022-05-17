@@ -1,0 +1,10 @@
+
+U
+java:S1854":Remove this useless assignment to local variable "server".(ÿµÔ¥þÿÿÿÿ
+Ž
+java:S1130"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(²Á€œüÿÿÿÿ8ÏÌµâŒ0
+E
+java:S1197"*Move the array designators [] to the type.(²Á€œüÿÿÿÿ
+F
+java:S1481"+Remove this unused "server" local variable.(ÿµÔ¥þÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(©÷©·ýÿÿÿÿ
