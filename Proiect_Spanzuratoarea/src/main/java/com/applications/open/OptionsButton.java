@@ -10,10 +10,14 @@ public class OptionsButton {
 
     public OptionsButton(MainFrame frame){
 
-        new Difficulty(frame);
-        new Language(frame);
-        new SaveOptionsButton(frame);
-        new BackButton(frame);
+        Difficulty difficultyOptions=new Difficulty();
+        difficultyOptions.init(frame);
+        Language language=new Language();
+        language.init(frame);
+        SaveOptionsButton saveOptionsButton=new SaveOptionsButton();
+        saveOptionsButton.init(frame);
+        BackButton backButton=new BackButton();
+        backButton.init(frame);
         frame.repaint();
     }
 

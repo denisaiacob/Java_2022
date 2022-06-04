@@ -30,9 +30,8 @@ public class Keyboard implements ActionListener {
     private JLabel hangmanPic;
     private String randomWord;
 
-    public Keyboard(MainFrame frame, JLabel hangmanPic) throws SQLException {
+    public Keyboard(MainFrame frame) throws SQLException {
         this.frame = frame;
-        this.hangmanPic = hangmanPic;
 
         Word myWord = new Word(frame);
         wordDisplayed = myWord.getWordDisplayed();
@@ -44,7 +43,7 @@ public class Keyboard implements ActionListener {
         initLetters();
     }
 
-    public void verifyLetter(char letter) throws IOException, SQLException {
+    private void verifyLetter(char letter) throws IOException, SQLException {
 
         boolean letterFound = false;
         for (int i = 0; i < wordWithSpaces.length(); i += 2) {
@@ -348,4 +347,7 @@ public class Keyboard implements ActionListener {
         }
     }
 
+    public void setHangmanPic(JLabel hangmanPic) {
+        this.hangmanPic = hangmanPic;
+    }
 }

@@ -15,9 +15,12 @@ public class StartButton extends JPanel {
 
         HangmanPicture hangmanPicture = new HangmanPicture(frame,0);
         JLabel hangmanPic=hangmanPicture.getPicLabel();
-        new Keyboard(frame, hangmanPic);
-        new RestartButton(frame);
-        new BackButton(frame);
+        Keyboard keyboard=new Keyboard(frame);
+        keyboard.setHangmanPic(hangmanPic);
+        RestartButton restartButton=new RestartButton();
+        restartButton.init(frame);
+        BackButton backButton=new BackButton();
+        backButton.init(frame);
 
         frame.repaint();
     }

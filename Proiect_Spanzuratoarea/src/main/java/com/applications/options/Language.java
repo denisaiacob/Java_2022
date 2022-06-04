@@ -6,16 +6,10 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 
-public record Language(MainFrame frame) {
+public class Language {
     public static String language = "english";
 
-
-    public Language(MainFrame frame) {
-        this.frame = frame;
-        init();
-    }
-
-    private void init() {
+    public void init(MainFrame frame) {
         JLabel languageLabel = new JLabel("Language:");
         languageLabel.setBounds(50, 250, 100, 50);
         languageLabel.setFont(new Font("Serif", Font.BOLD, 20));

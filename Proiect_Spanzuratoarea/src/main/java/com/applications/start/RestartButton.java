@@ -8,14 +8,12 @@ import java.awt.*;
 import java.io.IOException;
 import java.sql.SQLException;
 
-public record RestartButton(MainFrame frame) {
+public class RestartButton {
 
-    public RestartButton(MainFrame frame) {
+    private MainFrame frame;
+
+    public void init(MainFrame frame) {
         this.frame=frame;
-        init();
-    }
-
-    private void init() {
         JButton restartButton = new JButton("Restart");
         restartButton.setBounds(640, 490, 100, 30);
         restartButton.addActionListener(actionEvent -> {
@@ -29,7 +27,7 @@ public record RestartButton(MainFrame frame) {
         frame.add(restartButton);
     }
 
-    public void restartAction() throws IOException, SQLException {
+    private void restartAction() throws IOException, SQLException {
         frame.getContentPane().removeAll();
         frame.repaint();
         new StartButton(frame);

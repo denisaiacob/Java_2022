@@ -9,12 +9,9 @@ import java.io.IOException;
 public class BackButton {
     private MainFrame frame;
 
-    public BackButton(MainFrame frame){
-        this.frame=frame;
-        init();
-    }
 
-    private void init() {
+    public void init(MainFrame frame) {
+        this.frame=frame;
         JButton backButton=new JButton("Back");
         backButton.setBounds(740,490,100,30);
         backButton.setBackground(Color.CYAN);

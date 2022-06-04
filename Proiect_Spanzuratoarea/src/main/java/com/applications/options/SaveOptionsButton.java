@@ -10,12 +10,8 @@ public class SaveOptionsButton {
 
     private MainFrame frame;
 
-    public SaveOptionsButton(MainFrame frame){
-        this.frame = frame;
-        init();
-    }
-
-    private void init(){
+    public void init(MainFrame frame){
+        this.frame=frame;
         JButton saveButton=new JButton("Save");
         saveButton.setBounds(640,490,100,30);
         saveButton.setBackground(Color.CYAN);

@@ -6,15 +6,11 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 
-public record Difficulty(MainFrame frame) {
+public class Difficulty {
     public static String difficulty = "easy";
 
-    public Difficulty(MainFrame frame) {
-        this.frame = frame;
-        init();
-    }
+    public void init(MainFrame frame) {
 
-    private void init() {
         JLabel difficultyLabel = new JLabel("Difficulty:");
         difficultyLabel.setBounds(50, 50, 100, 50);
         difficultyLabel.setFont(new Font("Serif", Font.BOLD, 20));
