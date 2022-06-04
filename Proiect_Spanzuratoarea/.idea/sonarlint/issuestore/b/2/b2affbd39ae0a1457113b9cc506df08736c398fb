@@ -1,0 +1,10 @@
+
+[
+java:S6207"ERemove this redundant constructor which is the same as a default one.(ŒƒÔÏ
+S
+java:S26962"6Make the enclosing method "static" or remove this set.(ÿ’ø8ÌùåÒ’0
+S
+java:S26966"6Make the enclosing method "static" or remove this set.(—ğ’–8ÜùåÒ’0
+2
+java:S1700
+"Rename field "language"(¡÷íşúÿÿÿÿ

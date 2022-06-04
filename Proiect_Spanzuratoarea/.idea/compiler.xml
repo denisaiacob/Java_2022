@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Proiect_spanzuratoarea - Copy" />
+        <module name="Proiect_spanzuratoarea_bun" />
+        <module name="Proiect_spanzuratoarea" />
+        <module name="Proiect_Spanzuratoarea" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

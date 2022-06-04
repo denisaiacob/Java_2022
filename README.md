@@ -32,3 +32,6 @@ Compulsory + Homework;
 
 Laborator 11:
 Compulsory;
+
+Proiect:
+Jocul spânzurătoarea;

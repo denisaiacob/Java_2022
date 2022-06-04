@@ -1,0 +1,15 @@
+
+—
+java:S1186
+"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(û›£
+a
+java:S2677"LUse or store the value returned from "readLine" instead of throwing it away.(î¾êv
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÑÏŸ
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼Æ‰Ñ
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ì–‡²ıÿÿÿÿ
+g
+java:S2095"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(«î€÷úÿÿÿÿ
+e
+java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ªƒíÈ
+e
+java:S20955"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ªƒíÈ
